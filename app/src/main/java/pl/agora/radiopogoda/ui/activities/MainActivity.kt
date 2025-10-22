@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
             statusBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { false }
         )
         super.onCreate(savedInstanceState)
-        installSplashScreen().also { onNewAudienceEvent(Destinations.splash) }
+        installSplashScreen()
         setContent { AppUI() }
 
         askForNotificationPermission()

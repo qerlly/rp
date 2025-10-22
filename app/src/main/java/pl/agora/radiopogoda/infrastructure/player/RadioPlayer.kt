@@ -3,6 +3,7 @@ package pl.agora.radiopogoda.infrastructure.player
 import android.annotation.SuppressLint
 import android.content.Context
 import android.media.AudioManager
+import android.util.Log
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
@@ -151,13 +152,7 @@ class RadioPlayer @Inject constructor(
 
     override fun setMediaData(data: PlayerMediaItemModel?) {
         val currentData = playerMediaData.value
-        if (data != null && data.uri != currentData?.uri) {
-            val isChannel = data.mediaType == MediaType.CHANNELS || data.mediaType == MediaType.MAIN_CHANNEL
-            if (exoPlayer?.isPlaying == true && isChannel) {
-                onNewPlayerEvent(EventType.STOP)
-            }
-            onNewProgram(data)
-        }
+        if (data != null && data.uri != currentData?.uri) { onNewProgram(data) }
         playerMediaData.value = data
     }
 
@@ -171,6 +166,7 @@ class RadioPlayer @Inject constructor(
 
         val programName = if (mediaType != MediaType.PODCAST) mediaItem.subtitle
         else mediaItem.title
+        Log.d("ZXC", programName)
 
         val typeTransmission = if (mediaType == MediaType.PODCAST) 1 else 2
 
@@ -197,6 +193,8 @@ class RadioPlayer @Inject constructor(
                 exoPlayer?.currentPosition?.div(1000)?.toInt() ?: 0
             else
                 (System.currentTimeMillis() / 1000).toInt()
+
+            Log.d("ZXC", eventType.name + " $offset")
 
             when (eventType) {
                 EventType.NEXT -> {

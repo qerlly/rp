@@ -218,7 +218,7 @@ class MainViewModel @Inject constructor(
         while (isActive) {
             val currentRds = _mainUiState.value.rdsData?.now
             val newMainRds = channelsRepository.getRds(MAIN_CHANNEL).parseRdsData()
-            if (currentRds?.startDate?.checkIfDateIsAfter(newMainRds?.now?.startDate) != false) {
+            if (currentRds?.title != newMainRds?.now?.title) {
                 _mainUiState.update { it.copy(rdsData = newMainRds) }
                 playerMediaData.value?.let { mediaItem ->
                     if (mediaItem.mediaType == MediaType.MAIN_CHANNEL && newMainRds != null)

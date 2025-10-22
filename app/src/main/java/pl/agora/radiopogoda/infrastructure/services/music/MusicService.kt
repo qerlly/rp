@@ -178,6 +178,7 @@ class MusicService : MediaBrowserServiceCompat(), AudioManager.OnAudioFocusChang
         stopAndDestroy()
         mediaSessionService.releaseSession()
         super.onDestroy()
+        player.onNewPlayerEvent(EventType.CLOSE)
     }
 
     override fun onTaskRemoved(rootIntent: Intent?) {
@@ -211,11 +212,6 @@ class MusicService : MediaBrowserServiceCompat(), AudioManager.OnAudioFocusChang
     } catch (e: Exception) { stopAndDestroy() }
 
     private fun onPause(serviceState: MusicServiceState = MusicServiceState.PAUSE) {
-        val event = if (RadioPlayer.mediaData.value?.mediaType == MediaType.PODCAST)
-            EventType.PAUSE
-        else
-            EventType.STOP
-        player.onNewPlayerEvent(event)
         mutableState.value = serviceState
         startForegroundService()
         player.destroyPlayer()
@@ -225,7 +221,6 @@ class MusicService : MediaBrowserServiceCompat(), AudioManager.OnAudioFocusChang
     private fun stopAndDestroy(): Int {
         scope.cancel()
         rdsJob?.cancel()
-        player.onNewPlayerEvent(EventType.CLOSE)
         mediaSessionService.releaseSession()
         receiversManager.unregisterReceivers()
         audioManager.abandonAudioFocus(this)
@@ -243,6 +238,21 @@ class MusicService : MediaBrowserServiceCompat(), AudioManager.OnAudioFocusChang
         } else {
             intent.getParcelableExtra(PlayerMediaItemModel.MEDIA_KEY)
         }
+
+        val playerData = RadioPlayer.mediaData.value
+        val isPause = intent.action in listOf(
+            MusicServiceActions.PAUSE_NOTIFICATION.name,
+            MusicServiceActions.PAUSE_ACTION.name,
+        )
+
+        if (playerData != null && isPause) {
+            if (playerData.mediaType == MediaType.PODCAST) {
+                player.onNewPlayerEvent(eventType = EventType.PAUSE)
+            } else {
+                player.onNewPlayerEvent(eventType = EventType.STOP)
+            }
+        }
+
         if (intent.action in listOf(
                 MusicServiceActions.REWIND_BACK.name,
                 MusicServiceActions.REWIND_FORWARD.name,
@@ -252,7 +262,7 @@ class MusicService : MediaBrowserServiceCompat(), AudioManager.OnAudioFocusChang
             )
         ) return false
 
-        return if (data?.uri != RadioPlayer.mediaData.value?.uri) {
+        return if (data?.uri != playerData?.uri) {
             player.resetPlayer()
             player.setMediaData(data)
             true

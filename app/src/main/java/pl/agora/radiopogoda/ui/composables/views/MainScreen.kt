@@ -31,6 +31,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.filterNot
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import pl.agora.radiopogoda.data.model.channel.Channel
@@ -41,6 +42,7 @@ import pl.agora.radiopogoda.ui.composables.customViews.appBar.MainAppBar
 import pl.agora.radiopogoda.ui.composables.customViews.appBar.MainBottomBar
 import pl.agora.radiopogoda.ui.composables.customViews.drawer.DrawerContent
 import pl.agora.radiopogoda.ui.composables.customViews.player.BottomPlayerView
+import pl.agora.radiopogoda.ui.composables.navigation.Destinations
 import pl.agora.radiopogoda.ui.composables.navigation.Navigation
 import pl.agora.radiopogoda.ui.theme.white
 import pl.agora.radiopogoda.ui.uiData.BottomSheetState
@@ -199,6 +201,7 @@ private fun DestinationTracker(navController: NavController, onNewAudienceEvent:
                 filledRoute
             }
             .distinctUntilChanged()
+            .filterNot { it == Destinations.news }
             .collect { screenWithArgs -> onNewAudienceEvent(screenWithArgs) }
     }
 }
