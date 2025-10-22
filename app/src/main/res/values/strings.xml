@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Radio Pogoda</string>
+    <string name="gemius_app_name">Radio Pogoda</string>
+
+    <string name="home">Słuchaj</string>
+    <string name="news">Newsy</string>
+    <string name="podcast">Podcasty</string>
+    <string name="contest">Konkursy</string>
+    <string name="menu">Więcej</string>
+    <string name="onRadio">Ramówka</string>
+    <string name="live_radio">Radio na żywo</string>
+    <string name="music_channels">Stacje radiowe</string>
+    <string name="charts_app_bar">Turbo Top</string>
+    <string name="charts">Lista przebojów Turbo Top</string>
+    <string name="charts_title">ZAGŁOSUJ</string>
+    <string name="charts_hamburger">Lista przebojów</string>
+    <string name="check_for_music">Sprawdź, co graliśmy</string>
+    <string name="info">Informacje</string>
+    <string name="empty_contest">Brak aktualnych konkursów</string>
+    <string name="empty_podcasts">Brak aktualnych podcastów</string>
+    <string name="empty_news">Brak aktualnych wiadomości</string>
+    <string name="programs">Programy</string>
+    <string name="new_podcasts">Najnowsze podcasty</string>
+    <string name="new_audio">Najnowsze audiobooki</string>
+    <string name="more">WIĘCEJ</string>
+    <string name="collapse">ZWIŃ</string>
+    <string name="show">ZOBACZ</string>
+    <string name="vote">GŁOSUJ</string>
+    <string name="check_playlist">Sprawdź, co graliśmy</string>
+    <string name="playlist_title">Graliśmy</string>
+    <string name="soon_play">Za chwilę zagramy</string>
+    <string name="contact">Kontakt</string>
+    <string name="rodo">Zgoda RODO</string>
+    <string name="frequencies">Częstotliwości</string>
+    <string name="search_us">Znajdziesz nas także</string>
+    <string name="live_player">Na żywo</string>
+    <string name="on_air">ON AIR</string>
+    <string name="swiped_play">NA ANTENIE</string>
+    <string name="actual_play">TERAZ GRAMY</string>
+    <string name="all">WSZYSTKIE</string>
+    <string name="actual_channel">SŁUCHASZ</string>
+    <string name="charts_full">Dziękujemy za oddane głosy, zapraszamy ponownie jutro.</string>
+    <string name="charts_error">Wystąpił błąd. Spróbuj ponownie później.</string>
+    <plurals name="number_of_votes">
+        <item quantity="one">Został Ci %d głos.</item>
+        <item quantity="few">Zostały Ci %d głosy.</item>
+        <item quantity="other">Zostało Ci %d głosów.</item>
+    </plurals>
+
+    //dialogs
+    <string name="ok">OK</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="exit_dialog_text">Czy na pewno chcesz zamknąć aplikację?</string>
+    <string name="ads_presenters">Dostawcy reklam</string>
+
+    //errors
+    <string name="retrofit_error">Wystąpił błąd podczas komunikacji z serwerem!</string>
+    <string name="error_view_title">Ups!</string>
+    <string name="network_error">Niestety nie masz połączenia z internetem!\nczekamy na wznowienie połączenia</string>
+    <string name="history_empty">Brak danych dla wybranej godziny</string>
+    <string name="permission_rationale_message">Do prawidłowego działania aplikacji wymagane jest zezwolenie na wyświetlanie powiadomień. Możesz udzielić pozwolenia w ustawieniach aplikacji.</string>
+    <string name="settings">Ustawienia</string>
+
+    //on radio
+    <string name="morning_category">RANO</string>
+    <string name="day_category">POPOŁUDNIE</string>
+    <string name="night_category">NOC</string>
+    <string name="actual_on_radio_pos">TRWA:</string>
+
+    // RODO
+    <string name="gdpr_swich">Zgoda na personalizację reklam:</string>
+    <string name="gdpr_header_main_one">ZGODA</string>
+    <string name="gdpr_section_zero">Zaznaczając powyższy suwak, a następnie klikając w przycisk „Przejdź do aplikacji" wyrażasz zgodę na przechowywanie i wykorzystywanie informacji o Twoim urządzeniu mobilnym i związane z tym przetwarzanie Twoich danych osobowych, w tym indywidualnego identyfikatora wyświetlania reklam urządzenia przez Eurozet sp. z o. o. z siedzibą w Warszawie oraz Zaufanych Partnerów administratora w celach marketingowych (w tym na dopasowanie reklam do Twoich preferencji) oraz analitycznych (pomiaru reklam i treści, a także rozwijania i ulepszania aplikacji).<br /><br />\n\nWyrażenie zgody jest całkowicie dobrowolne.<br /><br />\n\nJeżeli nie zaznaczysz powyższego suwaka i klikniesz przycisk „Przejdź do aplikacji” będziesz mógł swobodnie korzystać z aplikacji, ale nie będziemy mogli dopasowywać prezentowych reklam do Twoich preferencji.<br /><br />\n\nW każdej chwili możesz zmienić swoje ustawienia, poprzez wejście w zakładkę „Kontakt”, a następnie opcję „Zgoda na personalizację reklam”. Wycofanie uprzednio wyrażonej zgody pozostanie bez wpływu na zgodność przetwarzania danych dokonane przed jej wycofaniem. Niektóre rodzaje przetwarzania danych osobowych mogą nie wymagać Twojej zgody, ale masz prawo sprzeciwić się takiemu przetwarzaniu. Dowiedz się więcej o przysługujących Ci prawach i o tym jak przetwarzamy Twoje dane poniżej.</string>
+    <string name="back_to_app_label">Przejdź do aplikacji</string>
+    <string name="gdpr_header_main_two">POLITYKA PRYWATNOŚCI APLIKACJI</string>
+    <string name="gdpr_section_zero_A">Poniżej przedstawiamy szczegółowe informacje dotyczące zasad przetwarzania Twoich danych.<br /><br />\n\n
+W zakresie przetwarzania danych osobowych stosuje się Rozporządzenie Parlamentu Europejskiego i Rady Unii Europejskiej 2016/679 z 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE ("RODO"). Dokładamy wszelkich starań, aby zapewnić wszelkie środki fizycznej, technicznej i organizacyjnej ochrony danych osobowych przed ich przypadkowym czy umyślnym zniszczeniem, utratą, zmianą, nieuprawnionym ujawnieniem, wykorzystaniem czy dostępem, zgodnie ze wszystkimi obowiązującymi przepisami.</string>
+    <string name="gdpr_section_one">Dane osobowe to informacje o zidentyfikowanej lub możliwej do zidentyfikowania osobie fizycznej. W zakresie korzystania z naszej aplikacji wyróżniamy takie kategorie danych osobowych jak m.in. przechowywanie i wykorzystywanie informacji o Twoim urządzeniu mobilnym i związane z tym przetwarzanie Twoich danych osobowych takie jak informacje o aktywności użytkownika w aplikacji, indywidualny identyfikator wyświetlania reklam urządzenia.</string>
+    <string name="gdpr_section_two">Administratorem Twoich danych osobowych, czyli podmiotem, który decyduje o sposobie i celu przetwarzania danych osobowych jest Eurozet sp. z o. o. z siedzibą w Warszawie pod adresem ul. Żurawia 8 (00-503 Warszawa). Odrębnymi administratorami Twoich danych osobowych mogą być również nasi Zaufani Partnerzy, z którymi współpracujemy w szczególności w zakresie marketingu np. Google (listę takich podmiotów znajdziesz również w tutaj lub w zakładce kontakt ->„Zgoda na personalizację reklam”.Możesz skontaktować się z nami pisemnie, za pomocą poczty tradycyjnej pisząc na adres: ul. Żurawia 8 (00-503 Warszawa) lub poprzez wiadomość e-mail na adres: <a href="mailto:iodo@eurozet.pl">iodo@eurozet.pl</a>. Wyznaczyliśmy Inspektora Ochrony Danych Osobowych, z którym można skontaktować się za pomocą poczty tradycyjnej pisząc na adres: ul. Żurawia 8 (00-503 Warszawa) lub drogą e-mailową pod adresem:: <a href="mailto:iodo@eurozet.pl">iodo@eurozet.pl</a>.</string>
+
+    <string name="gdpr_section_three">Przetwarzamy Twoje dane osobowe w celu świadczenia usług drogą elektroniczną, które dostępne są w naszej aplikacji m.in. w zakresie udostępniania użytkownikom treści zamieszczonych w aplikacji (w tym umożliwienie poprawnego działania i wyświetlania aplikacji na urządzeniu użytkownika) na podstawie niezbędności przetwarzania do wykonania umowy (art. 6 ust. 1 lit. b RODO). Przetwarzamy Twoje dane osobowe również w celach wynikających z prawnie uzasadnionych interesów realizowanych przez administratora lub przez stronę trzecią w celu ewentualnego ustalenia i dochodzenia roszczeń lub obrony przed roszczeniami na podstawie art. 6 ust. 1 lit. f RODO, a także w oparciu o wyrażoną przez Ciebie zgodę na przechowywanie i wykorzystywanie informacji o Twoim urządzeniu mobilnym i związane z tym przetwarzanie Twoich danych osobowych w celach marketingowych oraz w celach analitycznych i statystycznych przez administratora i Zaufanych Partnerów administratora (tj. na podstawie art. 6 ust. 1 lit. a RODO).</string>
+    <string name="gdpr_section_four">Twoje dane są przetwarzane abyśmy mogli poprawnie wyświetlać treści dostępne w naszej aplikacji, a w celach marketingowych i analitycznych o ile wyraziłeś na to zgodę. Za zgodą właśnie personalizujemy treści i reklamy a także poddajemy analizie aktywność korzystania z naszej aplikacji. Jednym ze sposobów przetwarzania przez nas danych osobowych jest tzw. profilowanie, które polega na tym, że możemy w oparciu o Twoje dane tworzyć profile Twoich preferencji i następnie dostosowywać treści wyświetlanych reklam tak, aby odpowiadały Twoim zainteresowaniom (więcej o tym dowiesz się tutaj: https://policies.google.com/technologies/ads). Jeżeli nie wyrazisz na to zgody, prezentowane w aplikacji treści mogą nie być dopasowane do Twoich preferencji. Uprzejmie informujemy, że nie dokonujemy zautomatyzowanego podejmowania decyzji wywołującego skutki prawne lub mającego podobny istotnych wpływ na Twoją sytuację.</string>
+    <string name="gdpr_section_five">Jak większość przedsiębiorców, w swojej działalności korzystamy z pomocy innych podmiotów, co niejednokrotnie wiąże się z koniecznością przekazania im Twoich danych osobowych. W związku z powyższym, w razie potrzeby i w ramach wyrażonej przez Ciebie zgody, przekazujemy Twoje dane osobowe naszym Zaufanym Partnerom, co w niektórych przypadkach, potencjalnie może wiązać się z transferem danych poza EOG. Pełną listę Zaufanych Partnerów znajdziesz klikając w przycisk na dole ekranu "Kliknij i sprawdź listę dostawców reklam". Korzystamy m.in. z usług Google AdMob, dzięki temu na podstawie Twojej zgody, reklamy wyświetlane w aplikacji mogą być lepiej dopasowane do Twoich zainteresowań. Google może korzystać z identyfikatora wyświetlania reklam urządzenia, na którym wyświetla się reklama, tak aby określić zainteresowania oraz dane demograficzne użytkowników. Dzięki temu treści wyświetlane w naszej aplikacji mogą być lepiej dopasowane do Twoich zainteresowań. Dowiedz się więcej tutaj: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> oraz tutaj: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>.</string>
+    <string name="gdpr_section_six">Nie przetwarzamy szczególnych kategorii danych osobowych ani danych osobowych dotyczących wyroków skazujących oraz naruszeń prawa.</string>
+    <string name="gdpr_section_seven">Twoje dane osobowe będą przetwarzane do czasu osiągnięcia celów przez administratora. Dane przetwarzane są przez czas świadczenia usługi, a w przypadku przetwarzania danych osobowych na podstawie zgody, dane będą przetwarzane do momentu jej wycofania (masz prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie tej zgody przed jej cofnięciem), a w przypadku przetwarzania danych osobowych na podstawie prawnie uzasadnionego interesu do osiągnięcia celu przetwarzania lub – do momentu wyrażenia skutecznego sprzeciwu. Okres przetwarzania może zostać przedłużony w przypadku, gdy przetwarzanie jest niezbędne do ustalenia i dochodzenia ewentualnych roszczeń lub obrony przez roszczeniami, a po tym czasie jedynie w przypadku i w zakresie, w jakim będą wymagać tego przepisy prawa.  Dane zostaną nieodwracalnie usunięte po upływie okresu przetwarzania.</string>
+    <string name="gdpr_section_eight">W związku z przetwarzaniem Twoich danych osobowych przysługuje Ci prawo do:<br /> \n
+	a. dostępu do Twoich danych osobowych,<br /> \n
+	b. sprostowania Twoich danych osobowych,<br /> \n
+	c. usunięcia Twoich danych osobowych,<br /> \n
+	d. ograniczenia przetwarzania Twoich danych osobowych,<br /> \n
+	e. wniesienia sprzeciwu wobec przetwarzania Twoich danych osobowych,<br /> \n
+	f. przenoszenia Twoich danych osobowych,<br /> \n
+	g. wniesienia skargi do organu nadzorczego – Prezesa Urzędu Ochrony Danych Osobowych.<br /><br /> \n \n
+Z praw wskazanych powyżej można skorzystać w szczególności poprzez: kontakt e-mailowy pod adresem: <a href="mailto:iodo@eurozet.pl">iodo@eurozet.pl</a> oraz/lub kontakt pisemny, za pomocą poczty tradycyjnej na adres: ul. Żurawia 8, 00-503 Warszawa.<br /><br />\n \n
+W przypadku, gdy przetwarzamy Twoje dane osobowe w oparciu o usprawiedliwiony interes administratora (np. w celach marketingowych) nie będziemy ich dłużej przetwarzać dla wskazanych celów, jeżeli wniesiesz sprzeciw wobec takiego przetwarzania. Masz prawo w dowolnym momencie wnieść bezpłatnie sprzeciw wobec przetwarzania dotyczących Cię danych osobowych gdy: (1) przetwarzanie Twoich danych osobowych odbywa się na podstawie prawnie uzasadnionego interesu lub dla celów statystycznych, a sprzeciw jest uzasadniony szczególną sytuacją w której się znalazłaś/eś lub (2) Twoje dane osobowe przetwarzane są na potrzeby marketingu bezpośredniego, w tym profilowania, w zakresie, w jakim przetwarzanie jest związane z takim marketingiem bezpośrednim. Sprzeciw możesz wnieść pisząc na adres e-mail <a href="mailto:iodo@eurozet.pl">iodo@eurozet.pl</a>.
+    </string>
+    <string name="gdpr_section_nine">Przetwarzanie danych przy użyciu aplikacji jest dobrowolne ale niezbędne do prawidłowego działania aplikacji i świadczenia usług drogą elektroniczną. Podanie innych danych osobowych jest dobrowolne, ale niezbędne do dostosowania treści i wyświetlanych reklam do Twoich preferencji. Brak zgody na przetwarzanie danych w celach marketingowych uniemożliwi dopasowanie wyświetlanych treści do Twoich preferencji, ale nie wpłynie na możliwość korzystania z aplikacji i liczbę pokazywanych Ci reklam.
+    </string>
+    <string name="gdpr_section_ten">Zaznaczając suwak, a następnie klikając w przycisk „Przejdź do aplikacji” wyrażasz zgodę na przechowywanie i wykorzystywanie informacji o Twoim urządzeniu mobilnym i związane z tym przetwarzanie Twoich danych osobowych przez Eurozet sp. z o. o. z siedzibą w Warszawie oraz Zaufanych Partnerów administratora w celach marketingowych (w tym na dopasowanie reklam do Twoich preferencji) oraz analitycznych (pomiaru reklam i treści a także rozwijania i ulepszania aplikacji). Wyrażenie zgody jest całkowicie dobrowolne, lecz konieczne w celu umożliwienia dopasowania prezentowych treści do Twoich preferencji. Wycofać uprzednio wyrażoną zgodę możesz w każdym momencie, poprzez wejście w zakładkę „Kontakt”, a następnie w opcję „Zgoda na personalizację reklam” . Wycofanie uprzednio wyrażonej zgody pozostanie bez wpływu na zgodność przetwarzania danych dokonane przed jej wycofaniem. Niektóre rodzaje przetwarzania danych osobowych mogą nie wymagać Twojej zgody, ale masz prawo sprzeciwić się takiemu przetwarzaniu.
+    </string>
+    <string name="gdpr_header_one">I. Czym są dane osobowe?</string>
+    <string name="gdpr_header_two">II. Kto przetwarza moje dane osobowe?</string>
+    <string name="gdpr_header_three">III. W oparciu o jakie podstawy prawne odbywa się przetwarzanie?</string>
+    <string name="gdpr_header_four">IV. Dlaczego moje dane osobowe są przetwarzane?</string>
+    <string name="gdpr_header_five">V. Odbiorcy moich danych</string>
+    <string name="gdpr_header_six">VI. Przetwarzanie danych szczególnych kategorii</string>
+    <string name="gdpr_header_seven">VII. Przez jaki okres moje dane będą przetwarzane?</string>
+    <string name="gdpr_header_eight">VIII. Jakie przysługują mi prawa w związku z przetwarzaniem danych osobowych</string>
+    <string name="gdpr_header_ninth">IX. Dobrowolność podania danych</string>
+    <string name="gdpr_header_tenth">X. Zgoda</string>
+    <string name="ads_list">Kliknij i sprawdź listę dostawców reklam</string>
+    <string name="vast_user_info">Dzięki tej reklamie słuchasz\nRadioPogoda za darmo!</string>
+
+    <string name="ads_app_id">ca-app-pub-3788166326431839</string>
+    <string name="admob_app_id">ca-app-pub-3788166326431839~7523317164</string>
+    <string name="banner_ad_id">/4350995/App/RadioPogoda_banner</string>
+    <string name="interstitial_ad_id">/4350995/App/RadioPogoda_interstitial</string>
+    <string name="pick_city">Wybierz swoje miasto</string>
+    <string name="audiobooks">Audiobooki</string>
+    <string name="no_presenter">Prezenter nie ma dostępnych podcastów</string>
+    <string name="no_presenter_audiobooks">Nie ma dostępnych audiobooków</string>
+    <string name="push_agree">Zgoda na powiadomienia</string>
+
+    <string name="firebase_channel_name">Push</string>
+    <string name="firebase_channel_description">Push powiadomienia</string>
+    <string name="radio_channel_name">Radio Pogoda</string>
+    <string name="radio_channel_description">Powiadomienia</string>
+
+    <string name="gemius_audience_id">ogKanvNiN3EmwNtMWb26scbinF7kIVgGQR.kICr9Ap7.J7</string>
+    <string name="gemius_stream_id">zZA1j2MoAXFMZHKslEgJAuUCXtbFuAbHcr0cjZwHydL.Q7</string>
+
+
+</resources>

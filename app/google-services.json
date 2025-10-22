@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467324404811",
+    "firebase_url": "https://radiopogodaapp.firebaseio.com",
+    "project_id": "radiopogodaapp",
+    "storage_bucket": "radiopogodaapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467324404811:android:295a3093dc76cd6f",
+        "android_client_info": {
+          "package_name": "pl.agora.radiopogoda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467324404811-op9i1p78vf0i89pkn1b91idfc7g4mtek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFm_IuR2pEdKBNUl1atG9wwRPup_5XoyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467324404811-op9i1p78vf0i89pkn1b91idfc7g4mtek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "467324404811-eovks4kafg96hcsakvl6h9a651ig3ih9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pl.agora.radiopogoda"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9400891349711516~8134213848"
+    }
+  ],
+  "configuration_version": "1"
+}
